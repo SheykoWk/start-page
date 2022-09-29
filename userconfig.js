@@ -6,7 +6,7 @@ const CONFIG = new Config({
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Jalisco, Mexico',
     scale: 'C'
   },
   clock: {
@@ -26,78 +26,87 @@ const CONFIG = new Config({
     "t": 'todo-list',
     "s": 'search-bar'
   },
-  disabled: [],
+  disabled: ["todo-list", "crypto-rate"],
   openLastVisitedTab: false,
   tabs: [
     {
-      name: 'boards',
-      background_url: 'src/img/banners/bg-1.gif',
+      name: 'COMMON',
+      background_url: 'src/img/banners/klaus-deus-nenes.png',
       categories: [{
-        name: 'fun',
+        name: 'Dev',
         links: [
           {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
+            url: 'https://github.com/sheykowk',
+            name: 'Github',
+            icon: 'brand-github',
+            icon_color: '#7862fd'
           },
           {
-            name: '/out/',
-            url: 'https://4chan.org/out',
-            icon: 'leaf',
-            icon_color: '#64876d'
+            name: 'Notion',
+            url: 'https://www.notion.so/',
+            icon: 'brand-notion',
+            icon_color: '#7862fd'
+
           },
           {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
-            icon: 'book'
+            name: 'Portfolio',
+            url: 'https://sheykowk.github.io/',
+            icon: 'code',
+            icon_color: '#7862fd'
           },
           {
-            name: '/v/',
-            url: 'https://4chan.org/v/',
-            icon: 'device-gamepad',
-            icon_color: '#8b647b'
+            name: 'CV',
+            url: 'https://sh3yk0.notion.site/Sahid-Ayala-Kick-Backend-Developer-d8fa1820064e46feb47a1874b5319b13',
           },
           {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
+            name: 'My Certifications',
+            url: '',
+            icon: 'certificate',
+            icon_color: '#7862fd'
           }
         ]
       },
       {
-        name: 'Comfy',
+        name: 'Social',
         links: [
           {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
+            name: 'FB',
+            url: 'https://www.facebook.com/',
+            icon: 'brand-facebook',
+            icon_color: '#7862fd'
           },
           {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
+            name: 'Youtube',
+            url: 'https://www.youtube.com/',
+            icon: 'brand-youtube',
+            icon_color: '#7862fd'
           }
         ]
       },
       {
-        name: 'Technology',
+        name: 'Pentesting',
         links: [
           {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
+            name: 'HTB',
+            url: 'https://app.hackthebox.com/home',
+            icon: 'box',
+            icon_color: '#7862fd'
           },
           {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
+            name: 'DB Exploit',
+            url: 'https://www.exploit-db.com/'
           },
           {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
+            name: 'GTFOBins',
+            url: 'https://gtfobins.github.io/'
           },
           {
-            name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
+            name: 'Pishing WG',
+            url: 'https://phishingquiz.withgoogle.com/'
           },
           {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
+            name: 'HTB Academy',
+            url: 'https://academy.hackthebox.com/dashboard',
             icon: 'code'
           }
         ]

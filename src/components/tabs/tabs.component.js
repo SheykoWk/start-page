@@ -23,7 +23,7 @@ class Links extends Component {
               ${links.map(link =>
                 `
                   <div class="link-info">
-                    <a href="${ link.url }" target="_blank">
+                    <a href="${ link.url }">
                       ${Links.getIcon(link)}
                       ${link.name ? `<p class="link-name">${link.name}</p>` : ''}
                     </a>
@@ -125,13 +125,14 @@ class Tabs extends Component {
           right: 100%;
           background: #fff url("../img/bg-1.gif") repeat left;
           transition: all .6s;
-          animation: scroll 25s ease-in-out infinite;
+          animation: scroll 50s ease-in-out infinite;
       }
 
       @keyframes scroll {
           50% {
-              background-position-x: -240px;
+              background-position-x: -620px;
           }
+          
       }
 
       .categories ul:nth-child(2) {
